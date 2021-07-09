@@ -23,22 +23,17 @@ PrefabInstance:
     - target: {fileID: 2530105244822525959, guid: e9600d6d936d9f5448c3c2d81f655697,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2530105244822525959, guid: e9600d6d936d9f5448c3c2d81f655697,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5966534018684848539, guid: e9600d6d936d9f5448c3c2d81f655697,
         type: 3}
       propertyPath: m_Name
       value: Wristwatch Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 5966534018684848539, guid: e9600d6d936d9f5448c3c2d81f655697,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7248045294328773512, guid: e9600d6d936d9f5448c3c2d81f655697,
         type: 3}
@@ -113,7 +108,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 56ab03e41be0e394daa56d96db315035, type: 2}
+      objectReference: {fileID: 2100000, guid: a82ae0902f1e0bc47bc04aabf46d41aa, type: 2}
     - target: {fileID: -4216859302048453862, guid: 1f5a20cf402ae624e969edbaf519daf6,
         type: 3}
       propertyPath: m_RootOrder
