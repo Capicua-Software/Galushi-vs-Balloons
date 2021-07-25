@@ -78,6 +78,11 @@ public class PlayerShooting : MonoBehaviour
             //{
             //    enemyHealth.TakeDamage (damagePerShot, shootHit.point);
             //}
+            if (shootHit.collider.tag == "balloon")
+            {
+                GameObject balloon = GameObject.FindGameObjectWithTag("Balloon");
+                Destroy(balloon);
+            }
             gunLine.SetPosition (1, shootHit.point);
         }
         else
