@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3113522466560035357}
   - component: {fileID: 900161444716196899}
   - component: {fileID: 4121776385974785467}
+  - component: {fileID: 3641989670360528069}
   m_Layer: 0
   m_Name: RedBalloon
-  m_TagString: Untagged
+  m_TagString: Balloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,6 +64,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   power: 8
+--- !u!65 &3641989670360528069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485731259073727664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05417475, y: 0.063191794, z: 0.05558398}
+  m_Center: {x: -0.67235345, y: 0.010008735, z: 0.0008983939}
 --- !u!1 &1536443357961734962
 GameObject:
   m_ObjectHideFlags: 0
