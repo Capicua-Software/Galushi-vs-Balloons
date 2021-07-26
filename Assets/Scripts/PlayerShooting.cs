@@ -20,6 +20,12 @@ public class PlayerShooting : MonoBehaviour
     Light gunLight;
     float effectsDisplayTime = 0.2f;
 
+<<<<<<< HEAD
+    MeshRenderer laser;
+    public Material lasermaterial;
+    public GameObject EsferaLaser;
+=======
+>>>>>>> main
 
     void Awake ()
     {
@@ -35,7 +41,11 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
+<<<<<<< HEAD
+		if(Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+=======
 		if(isPressed && timer >= timeBetweenBullets && Time.timeScale != 0)
+>>>>>>> main
         {
             Shoot ();
         }
@@ -73,12 +83,16 @@ public class PlayerShooting : MonoBehaviour
 
         if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
         {
+<<<<<<< HEAD
+            if(shootHit.collider.tag == "balloon")
+=======
             //EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
             //if(enemyHealth != null)
             //{
             //    enemyHealth.TakeDamage (damagePerShot, shootHit.point);
             //}
             if (shootHit.collider.tag == "balloon")
+>>>>>>> main
             {
                 GameObject balloon = GameObject.FindGameObjectWithTag("Balloon");
                 Destroy(balloon);
@@ -90,4 +104,8 @@ public class PlayerShooting : MonoBehaviour
             gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
         }
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
 }
