@@ -169,7 +169,11 @@ GameObject:
   - component: {fileID: 362034793555251176}
   - component: {fileID: 4223834430885321441}
   - component: {fileID: 6258534127841445471}
+<<<<<<< HEAD
   - component: {fileID: 4042958700928415935}
+=======
+  - component: {fileID: 2343476305364514240}
+>>>>>>> main
   m_Layer: 0
   m_Name: GreenBalloon
   m_TagString: Balloon
@@ -222,7 +226,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   power: 10
+<<<<<<< HEAD
 --- !u!65 &4042958700928415935
+=======
+--- !u!65 &2343476305364514240
+>>>>>>> main
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,5 +241,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+=======
+  m_Size: {x: 0.0402635, y: 0.04458683, z: 0.05575962}
+  m_Center: {x: -0.5380389, y: 0.003775649, z: 4.9960174e-17}
+>>>>>>> main

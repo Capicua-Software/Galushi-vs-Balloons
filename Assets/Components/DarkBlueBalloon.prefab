@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 3654565846971019499}
   - component: {fileID: 7631660319212421136}
   - component: {fileID: -8086198780531271822}
+<<<<<<< HEAD
   - component: {fileID: -5935560221588856019}
+=======
+  - component: {fileID: -3787464483894324174}
+>>>>>>> main
   m_Layer: 0
   m_Name: DarkBlueBalloon
   m_TagString: Balloon
@@ -64,7 +68,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   power: 13
+<<<<<<< HEAD
 --- !u!65 &-5935560221588856019
+=======
+--- !u!65 &-3787464483894324174
+>>>>>>> main
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,8 +83,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+=======
+  m_Size: {x: 0.043073926, y: 0.05426392, z: 0.05575962}
+  m_Center: {x: -0.9438687, y: 0.0122507345, z: 1.5505798e-17}
+>>>>>>> main
 --- !u!1 &5342374603151417570
 GameObject:
   m_ObjectHideFlags: 0
