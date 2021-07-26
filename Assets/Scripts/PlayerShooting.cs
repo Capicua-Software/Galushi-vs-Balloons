@@ -20,12 +20,6 @@ public class PlayerShooting : MonoBehaviour
     Light gunLight;
     float effectsDisplayTime = 0.2f;
 
-<<<<<<< HEAD
-    MeshRenderer laser;
-    public Material lasermaterial;
-    public GameObject EsferaLaser;
-=======
->>>>>>> main
 
     void Awake ()
     {
@@ -41,11 +35,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
-<<<<<<< HEAD
-		if(Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
-=======
 		if(isPressed && timer >= timeBetweenBullets && Time.timeScale != 0)
->>>>>>> main
         {
             Shoot ();
         }
@@ -81,31 +71,20 @@ public class PlayerShooting : MonoBehaviour
         shootRay.origin = transform.position;
         shootRay.direction = transform.forward;
 
-        if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
-        {
-<<<<<<< HEAD
-            if(shootHit.collider.tag == "balloon")
-=======
-            //EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
-            //if(enemyHealth != null)
-            //{
-            //    enemyHealth.TakeDamage (damagePerShot, shootHit.point);
-            //}
-            if (shootHit.collider.tag == "balloon")
->>>>>>> main
-            {
-                GameObject balloon = GameObject.FindGameObjectWithTag("Balloon");
-                Destroy(balloon);
-            }
-            gunLine.SetPosition (1, shootHit.point);
-        }
-        else
-        {
-            gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
-        }
-    }
-<<<<<<< HEAD
 
-=======
->>>>>>> main
+        RaycastHit theHit;
+        // Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out theHit);
+        bool hit = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out theHit, 50);
+
+
+        if (hit)
+        {
+            if (theHit.collider.tag == "Balloon")
+            {
+                DestroyObject(theHit.collider.gameObject);
+            }
+            gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
+
+        }        
+    }
 }

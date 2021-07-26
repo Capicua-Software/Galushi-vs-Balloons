@@ -6518,6 +6518,8 @@ MonoBehaviour:
   inputThreshold: 0.1
   inputSource: 4
   inputButton: 2
+  elcaldero: {fileID: 2066702207446477401}
+  verdemusg: {fileID: 2100000, guid: 94f2a9d5a5bfb1b4fa723b3255cd720c, type: 2}
 --- !u!1 &4288680121071136017
 GameObject:
   m_ObjectHideFlags: 0
