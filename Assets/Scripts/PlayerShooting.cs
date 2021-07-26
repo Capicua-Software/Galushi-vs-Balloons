@@ -78,11 +78,6 @@ public class PlayerShooting : MonoBehaviour
 
         if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
-
-            if (theHit.collider.tag == "Balloon")
-            {
-                Debug.Log("entre");
-            }
             gunLine.SetPosition(1, shootHit.point);
         }
         else
@@ -91,7 +86,6 @@ public class PlayerShooting : MonoBehaviour
             if (theHit.collider.tag == "Balloon")
             {
                 Destroy(theHit.collider.gameObject);
-                Debug.Log("entre");
             }
         }
 
