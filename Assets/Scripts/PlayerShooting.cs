@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
-    public float range = 100f;
+    public float range = 500f;
     public float inputThreshold = 0.1f;
     public XRNode inputSource;
     public InputHelpers.Button inputButton;
@@ -74,17 +74,26 @@ public class PlayerShooting : MonoBehaviour
 
         RaycastHit theHit;
         // Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out theHit);
-        bool hit = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out theHit, 50);
+        bool hit = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out theHit, 500);
 
-
-        if (hit)
+        if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
+
             if (theHit.collider.tag == "Balloon")
             {
-                DestroyObject(theHit.collider.gameObject);
+                Debug.Log("entre");
             }
+            gunLine.SetPosition(1, shootHit.point);
+        }
+        else
+        {
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
+            if (theHit.collider.tag == "Balloon")
+            {
+                Destroy(theHit.collider.gameObject);
+                Debug.Log("entre");
+            }
+        }
 
-        }        
     }
 }

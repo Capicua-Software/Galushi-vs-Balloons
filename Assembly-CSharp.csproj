@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EAFA8B4F-249E-360E-DAC8-D2E8C3887DBD}</ProjectGuid>
+    <ProjectGuid>{764FFEB2-713A-F900-551B-F2800DA03EE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,6 +59,8 @@
     <Compile Include="Assets\Scripts\Balloon.cs" />
     <Compile Include="Assets\Scripts\BlueBallonSpawn.cs" />
     <Compile Include="Assets\Scripts\GreenBalloonSpawns.cs" />
+    <Compile Include="Assets\Scripts\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\RedBallonSpawn.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\VR Beginner\Scripts\Effects\CauldronEffects.cs" />
