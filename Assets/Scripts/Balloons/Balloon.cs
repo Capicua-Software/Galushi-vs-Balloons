@@ -35,9 +35,9 @@ public class Balloon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Attack();
+        
         Destroy(gameObject);
-       
+        Attack();
     }
 
     void Attack()
