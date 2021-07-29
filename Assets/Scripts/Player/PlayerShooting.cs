@@ -92,6 +92,7 @@ public class PlayerShooting : MonoBehaviour
             if (theHit.collider.tag == "Balloon")
             {
                 playerHealth.RecuperarVida();
+                ScoreManager.score++;
                 Destroy(theHit.collider.gameObject);
             }
         }
