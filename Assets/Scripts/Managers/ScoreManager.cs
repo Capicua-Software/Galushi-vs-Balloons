@@ -1,24 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
     public static int score;
-
-
-    Text text;
+    TextMeshPro text;
 
 
     void Awake ()
     {
-        text = GetComponent <Text> ();
+        text = GetComponent <TextMeshPro>();
         score = 0;
     }
 
 
     void Update ()
     {
-        text.text = "Score: " + score;
+        text.text = score.ToString();
     }
 }
