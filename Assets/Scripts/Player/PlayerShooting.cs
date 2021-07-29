@@ -19,7 +19,7 @@ public class PlayerShooting : MonoBehaviour
     AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-
+    public AudioSource balloonpop;
 
     Animator anim;
     GameObject player;
@@ -41,7 +41,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
-		if(isPressed && timer >= timeBetweenBullets && Time.timeScale != 0)
+		if(/*Input.GetButton("Fire1")*/ isPressed && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead)
         {
             Shoot ();
         }
@@ -91,6 +91,7 @@ public class PlayerShooting : MonoBehaviour
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
             if (theHit.collider.tag == "Balloon")
             {
+                balloonpop.Play();
                 playerHealth.RecuperarVida();
                 ScoreManager.score++;
                 Destroy(theHit.collider.gameObject);
