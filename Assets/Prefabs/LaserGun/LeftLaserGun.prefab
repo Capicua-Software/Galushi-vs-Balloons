@@ -1437,6 +1437,7 @@ GameObject:
   - component: {fileID: 5044545678938479922}
   - component: {fileID: 8768372166021612365}
   - component: {fileID: 9147307013934085154}
+  - component: {fileID: 1305491123696432800}
   m_Layer: 0
   m_Name: LaserPoint
   m_TagString: Untagged
@@ -6518,8 +6519,19 @@ MonoBehaviour:
   inputThreshold: 0.1
   inputSource: 4
   inputButton: 2
-  elcaldero: {fileID: 2066702207446477401}
-  verdemusg: {fileID: 2100000, guid: 94f2a9d5a5bfb1b4fa723b3255cd720c, type: 2}
+  balloonpop: {fileID: 0}
+--- !u!114 &1305491123696432800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187792613350079650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b555080a7c9f82d4b996321f532af5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4288680121071136017
 GameObject:
   m_ObjectHideFlags: 0

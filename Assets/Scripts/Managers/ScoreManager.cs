@@ -20,4 +20,10 @@ public class ScoreManager : MonoBehaviour
     {
         text.text = score.ToString();
     }
+
+
+    public static void Score(int scoree)
+    {
+        score += scoree;
+    }
 }

@@ -64,9 +64,8 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void RecuperarVida()
+    public void RecuperarVida(int amount)
     {
-        int amount = 5;
         currentHealth += amount;
         healthSlider.value = currentHealth;
     }
