@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ignite
   - Balloon
+  - BlueBalloon
   layers:
   - Default
   - TransparentFX

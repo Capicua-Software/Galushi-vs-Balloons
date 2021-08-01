@@ -41,7 +41,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
-		if(/*Input.GetButton("Fire1")*/ isPressed && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead)
+		if(Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
         {
             Shoot ();
         }
@@ -91,10 +91,15 @@ public class PlayerShooting : MonoBehaviour
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
             if (theHit.collider.tag == "Balloon")
             {
-                balloonpop.Play();
-                playerHealth.RecuperarVida();
-                ScoreManager.score++;
                 Destroy(theHit.collider.gameObject);
+                ScoreManager.Score(10);
+
+            }
+            if (theHit.collider.tag == "BlueBalloon") 
+            { 
+                Destroy(theHit.collider.gameObject);            
+                playerHealth.RecuperarVida(50);
+                ScoreManager.Score(50);                
             }
         }
 
