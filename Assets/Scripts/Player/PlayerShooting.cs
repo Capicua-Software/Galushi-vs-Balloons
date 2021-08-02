@@ -41,7 +41,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
-		if(Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
+		if(isPressed && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
         {
             Shoot ();
         }
