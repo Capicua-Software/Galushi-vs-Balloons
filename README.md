@@ -15,3 +15,9 @@ The general goal of the project is to develop a game where players could enjoy a
 ## UI/UX Design
 ![Desktop - 2](https://user-images.githubusercontent.com/25597149/128085430-4447791e-7c92-40bd-a69a-1e1833b423ee.png)
 
+
+## Credits
+- Randy Frias
+- Jannabel Ramos
+- Alejandro Matos
+- Escarllet Suriel
