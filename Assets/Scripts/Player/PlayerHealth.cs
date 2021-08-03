@@ -37,7 +37,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Update ()
     {
-        if(damaged)
+        playerAudio.volume = AudioMenuSFX.SFXs;
+        if (damaged)
         {
             damageImage.color = flashColour;
         }

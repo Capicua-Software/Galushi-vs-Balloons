@@ -42,8 +42,9 @@ public class PlayerShooting : MonoBehaviour
     void Update ()
     {
         timer += Time.deltaTime;
+        gunAudio.volume = AudioMenuSFX.SFXs;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
-		if(Input.GetButton("Fire1") /*isPressed*/ && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
+		if(/*Input.GetButton("Fire1")*/ isPressed && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
         {
             Shoot ();
         }
@@ -60,6 +61,7 @@ public class PlayerShooting : MonoBehaviour
             gunLine.enabled = false;
             gunLine.enabled = false;
         }
+
     }
 
 

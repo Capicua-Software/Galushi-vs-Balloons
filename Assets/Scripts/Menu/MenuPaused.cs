@@ -26,11 +26,7 @@ public class MenuPaused : MonoBehaviour
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
         if (isPressed)
         {
-            if (gamepaused)
-            {
-                Resume();
-            }
-            else
+            if (!gamepaused)
             {
                 Pause();
             }
