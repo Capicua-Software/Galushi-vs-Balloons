@@ -34,7 +34,8 @@ public class PlayerShooting : MonoBehaviour
         gunLine = GetComponent <LineRenderer> ();
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
-        gunAudio.volume = PlayerPrefs.GetFloat("sfxvolumen", 1.0f); 
+        gunAudio.volume =AudioMenuSFX.SFXs; 
+       // balloonpop.volume= AudioMenuSFX.SFXs;
     }
 
 
