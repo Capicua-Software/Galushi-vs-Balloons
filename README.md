@@ -1,2 +1,6 @@
 # Galushi-vs-Balloons
-A game
+An awesome game for Oculus VR Devices.
+
+
+
+
