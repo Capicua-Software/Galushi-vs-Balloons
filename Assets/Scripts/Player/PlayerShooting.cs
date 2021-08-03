@@ -34,6 +34,7 @@ public class PlayerShooting : MonoBehaviour
         gunLine = GetComponent <LineRenderer> ();
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
+        gunAudio.volume = PlayerPrefs.GetFloat("sfxvolumen", 1.0f); 
     }
 
 
@@ -41,7 +42,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
         InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
-		if(isPressed && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
+		if(Input.GetButton("Fire1") /*isPressed*/ && timer >= timeBetweenBullets && Time.timeScale != 0 && !PlayerHealth.isDead &&!MenuPaused.gamepaused)
         {
             Shoot ();
         }
