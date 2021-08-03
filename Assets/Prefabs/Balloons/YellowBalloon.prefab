@@ -89,6 +89,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8702767057231136068}
   - component: {fileID: 4837394999492411145}
+  - component: {fileID: 5398060082687822874}
+  - component: {fileID: 9049913302707545861}
   m_Layer: 0
   m_Name: YellowBalloon
   m_TagString: Untagged
@@ -128,6 +130,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &5398060082687822874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430937266360659118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04414573, y: 0.05707848, z: 0.064234674}
+  m_Center: {x: -0.8194917, y: 0.01627402, z: 0.0027308983}
+--- !u!114 &9049913302707545861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430937266360659118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b4807bd3b83864292ec4fe203de8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 6
+  attackDamage: 10
 --- !u!1 &2529971690222275608
 GameObject:
   m_ObjectHideFlags: 0

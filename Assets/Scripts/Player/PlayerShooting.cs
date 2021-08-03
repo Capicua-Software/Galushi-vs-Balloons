@@ -114,6 +114,14 @@ public class PlayerShooting : MonoBehaviour
                 playerHealth.RecuperarVida(50);
                 ScoreManager.Score(50);                
             }
+            if (theHit.collider.tag == "YellowBalloon")
+            {
+                Destroy(theHit.collider.gameObject);
+                playerHealth.TakeDamage(20);
+                ScoreManager.Score(-20);
+            }
+
+            
         }
 
     }

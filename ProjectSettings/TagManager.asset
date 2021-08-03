@@ -7,6 +7,7 @@ TagManager:
   - Ignite
   - Balloon
   - BlueBalloon
+  - YellowBalloon
   layers:
   - Default
   - TransparentFX
