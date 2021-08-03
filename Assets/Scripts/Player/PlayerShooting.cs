@@ -52,6 +52,14 @@ public class PlayerShooting : MonoBehaviour
         {
             DisableEffects ();
         }
+
+        if (MenuPaused.gamepaused)
+        {
+            gunParticles.Stop();
+            DisableEffects();
+            gunLine.enabled = false;
+            gunLine.enabled = false;
+        }
     }
 
 
@@ -68,7 +76,7 @@ public class PlayerShooting : MonoBehaviour
 
         gunAudio.Play ();
 
-        gunLight.enabled = true;
+        gunParticles.Stop();
 
         gunParticles.Stop ();
         gunParticles.Play ();
@@ -78,6 +86,7 @@ public class PlayerShooting : MonoBehaviour
 
         shootRay.origin = transform.position;
         shootRay.direction = transform.forward;
+
 
 
         RaycastHit theHit;
