@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
         playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;
         isDead = false;
+        playerAudio.volume = AudioMenuSFX.SFXs;
     }
 
 

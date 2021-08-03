@@ -64,6 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   power: 8
+  attackDamage: 10
 --- !u!65 &3641989670360528069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9158c1eccab16704e8e624b3fc111236, type: 2}
+  - {fileID: 2100000, guid: 73b6ce4ae74168941be4d697f5050aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -214,7 +215,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73233c293cc536e4eaf88d7280e765a3, type: 2}
+  - {fileID: 2100000, guid: 110630cff2b794144aa64e43bbd6a626, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
