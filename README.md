@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Capicua-Software/Galushi-vs-Balloons.svg)](https://github.com/Capicua-Software/Galushi-vs-Balloons/issues)
-[![Build Status](https://travis-ci.org/Capicua-Software/Galushi-vs-Balloons.svg?branch=master)](https://travis-ci.org/Capicua-Software/Galushi-vs-Balloons)
+[![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
 
 
 ### Description
