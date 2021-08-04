@@ -2461,6 +2461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1977658185}
   restartDelay: 5
+  tm: {fileID: 0}
 --- !u!95 &1122624352
 Animator:
   serializedVersion: 3
@@ -4168,7 +4169,7 @@ MonoBehaviour:
   damageImage: {fileID: 1052338766581180421}
   deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
   flashSpeed: 5
-  flashColour: {r: 0, g: 0.013011694, b: 0.5566038, a: 0.1}
+  flashColour: {r: 0, g: 0.62352943, b: 0.81568635, a: 1}
 --- !u!82 &1977658186
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4840,6 +4841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1977658185}
   restartDelay: 5
+  tm: {fileID: 1052338767096279341}
 --- !u!114 &1052338765383527636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5123,7 +5125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.027814088, b: 0.76862746, a: 1}
+  m_Color: {r: 0, g: 0.65150875, b: 0.8490566, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5516,10 +5518,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 46238fb1ad7a7a84ba8954c1c860994c, type: 3}
-    m_FontSize: 50
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 3
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
