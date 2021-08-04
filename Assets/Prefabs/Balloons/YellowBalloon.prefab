@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 9049913302707545861}
   m_Layer: 0
   m_Name: YellowBalloon
-  m_TagString: Untagged
+  m_TagString: YellowBalloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2430937266360659118}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0.0000000754979}
-  m_LocalPosition: {x: 123.89001, y: 1.4694, z: 22.084}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 142.34406, y: 142.34407, z: 142.34407}
   m_Children:
   - {fileID: 1070783964571729970}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   power: 6
-  attackDamage: 10
+  attackDamage: 20
 --- !u!1 &2529971690222275608
 GameObject:
   m_ObjectHideFlags: 0

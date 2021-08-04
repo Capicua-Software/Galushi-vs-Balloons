@@ -89,6 +89,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3935249331521572968}
   - component: {fileID: 8094840300828957161}
+  - component: {fileID: 8795544905184265458}
+  - component: {fileID: 6200680682672387099}
   m_Layer: 0
   m_Name: CyanBalloon
   m_TagString: Untagged
@@ -128,6 +130,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8795544905184265458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5021449424673271376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04118555, y: 0.059784476, z: 0.035989344}
+  m_Center: {x: -1.0401385, y: 0.0155144045, z: 0.0024663308}
+--- !u!114 &6200680682672387099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5021449424673271376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b4807bd3b83864292ec4fe203de8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 10
+  attackDamage: 5
 --- !u!1 &6098602385825554658
 GameObject:
   m_ObjectHideFlags: 0

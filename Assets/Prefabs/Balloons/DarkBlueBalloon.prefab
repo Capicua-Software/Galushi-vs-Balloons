@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b4807bd3b83864292ec4fe203de8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 13
+  power: 10
   attackDamage: 10
 --- !u!65 &-3787464483894324174
 BoxCollider:
