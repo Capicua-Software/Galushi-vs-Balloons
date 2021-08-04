@@ -22,11 +22,13 @@ public class GOMenu : MonoBehaviour
     }
 
     public GameObject screenload;
+    public GameObject Player;
     public GameObject video;
     public Slider slider;
     float timer;
     public void LoadLevel(int index)
     {
+        Player.SetActive(true);
         video.SetActive(false);
         screenload.SetActive(true);
          StartCoroutine(timere());
@@ -36,7 +38,7 @@ public class GOMenu : MonoBehaviour
     }
     IEnumerator LoadAsync(int index)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(8);
 
         SceneManager.LoadScene(index);
     }

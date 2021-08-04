@@ -8,7 +8,7 @@ public class Balloon : MonoBehaviour
     [SerializeField] private float power = 10;
     private Rigidbody rigidbody;
     float upinput;
-    public int attackDamage = 10;
+    public int attackDamage = 5;
 
     float timer;
     Animator anim;
@@ -37,7 +37,11 @@ public class Balloon : MonoBehaviour
     {
         
         Destroy(gameObject);
-        Attack();
+        if (gameObject.tag != "YellowBalloon")
+        {
+            Attack();
+        }
+       
     }
 
     void Attack()

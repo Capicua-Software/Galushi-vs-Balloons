@@ -7,15 +7,12 @@ public class LevelLoading : MonoBehaviour
 {
 
     public GameObject screenload;
-    public GameObject uno, dos, tres;
+   
     public Slider slider;
     float timer;
     public void LoadLevel (int index)
     {
-        screenload.SetActive(true);
-        uno.SetActive(false);
-        dos.SetActive(false);
-        tres.SetActive(false);
+        screenload.SetActive(true);       
         StartCoroutine(timere());
        
         StartCoroutine(LoadAsync(index));
@@ -23,9 +20,9 @@ public class LevelLoading : MonoBehaviour
     }
     IEnumerator LoadAsync(int index)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(8);
         
-        SceneManager.LoadScene(index);
+        SceneManager.LoadSceneAsync(index);
     }
 
     IEnumerator timere()

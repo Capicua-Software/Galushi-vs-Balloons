@@ -8,6 +8,7 @@ TagManager:
   - Balloon
   - BlueBalloon
   - YellowBalloon
+  - screenload
   layers:
   - Default
   - TransparentFX
