@@ -2461,6 +2461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1977658185}
   restartDelay: 5
+  tm: {fileID: 0}
 --- !u!95 &1122624352
 Animator:
   serializedVersion: 3
@@ -4162,8 +4163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b284be4b37585144980d582b602ed2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 100
+  startingHealth: 500
+  currentHealth: 500
   healthSlider: {fileID: 1052338766899453241}
   damageImage: {fileID: 1052338766581180421}
   deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
@@ -4840,6 +4841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1977658185}
   restartDelay: 5
+  tm: {fileID: 1052338767096279341}
 --- !u!114 &1052338765383527636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5516,10 +5518,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 46238fb1ad7a7a84ba8954c1c860994c, type: 3}
-    m_FontSize: 50
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 3
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
