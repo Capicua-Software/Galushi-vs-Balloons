@@ -73,7 +73,7 @@ public class GameOverManager : MonoBehaviour
                 SceneManager.LoadScene(2);
             }
         }
-        else if (ScoreManager.score >= 500 && level2)
+        else if (ScoreManager.score >= 1000 && level2)
         {
             txt.text = "JUEGO TERMINADO";
             anim.SetTrigger("GameOver");
@@ -85,7 +85,7 @@ public class GameOverManager : MonoBehaviour
                 SceneManager.LoadScene(1);
             }
         }
-      // ScoreManager.score = 500;
+       //ScoreManager.score = 500;
     }
 
     IEnumerator Animat(string texto, int seconds)

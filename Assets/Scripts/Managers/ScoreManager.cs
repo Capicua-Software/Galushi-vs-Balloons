@@ -5,14 +5,13 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static int score;
+    public static int score = 0;
     TextMeshPro text;
 
 
     void Awake ()
     {
         text = GetComponent <TextMeshPro>();
-        score = 0;
     }
 
 
